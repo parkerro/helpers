@@ -1,4 +1,4 @@
-<?
+<?php
 /**
 *   @author ParkerRo
 *   使用google api 取得網頁縮圖
@@ -14,7 +14,7 @@ class ScreenShot{
     	$return = file_get_contents($google_api);
     	$return = json_decode($return, true);
 
-        if($return['error']){
+        if(@$return['error']){
             echo "Api error.";
             exit;
         }
