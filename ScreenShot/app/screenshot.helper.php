@@ -3,23 +3,22 @@
 *   @author ParkerRo
 *   使用google api 取得網頁縮圖
 *   
-*   echo ScreenShot::getImg('http://www.pchome.com.tw/');
+*   echo screenshotHelper::getImg('http://www.pchome.com.tw/');
 */
-class ScreenShot{
+class screenshotHelper{
 
     const google_api = "https://www.googleapis.com/pagespeedonline/v1/runPagespeed";
-    static public $siteUrl;
+    static private $siteUrl;
 
 
 /**
 *   getImg({要輸出縮圖的網址}, {img 或是 base64})
 *
 */
-    public static function getImg($site_url = '', $type = 'base64')
+    public static function getImg($site_url, $type = 'base64')
     {
-        if($site_url){
-            self::$siteUrl = $site_url;
-        }
+        self::$siteUrl = $site_url;
+        if(!self::$siteUrl || self::$siteUrl == null) return false;
 
         try{
             $img_data = self::getImgData();
@@ -40,7 +39,7 @@ class ScreenShot{
             return $return;
         }
         catch(Exception $e){
-            return 'Message: ' .$e->getMessage();
+            return 'Error message: ' .$e->getMessage();
         }
     }
 

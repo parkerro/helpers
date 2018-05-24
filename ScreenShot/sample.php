@@ -1,4 +1,4 @@
 <?php 
-include "app/ScreenShot.php";
+include "app/screenshot.helper.php";
 
-echo ScreenShot::getImg('http://www.pchome.com.tw/', 'img');
+echo screenshotHelper::getImg('http://www.pchome./', 'img');
