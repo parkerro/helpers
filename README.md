@@ -43,5 +43,8 @@ $youtubeHelper->getThumbnail({youtubeID}); // 回傳youtube縮圖
 
 * **Parker Ro** - [趴克肉](https://parkerro.tw/)
 
+## Version
+
+* 2018/05/24 ver 1.0.0
 
 
