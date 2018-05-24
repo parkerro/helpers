@@ -49,4 +49,11 @@ class dateHelper{
         $value = ($value)?$value:$this->now(); // 如果沒有參數，使用現在時間
         return date($this->formateDate, strtotime(date('Y-m-t', strtotime($value))));
     }    
+
+    // formatWeekdayToChinese({datetime}, {prefix}, {suffix})
+    public function formatWeekdayToChinese($datetime, $prefix='', $suffix=''){
+        $weekday  = date('w', strtotime($datetime));
+        $weeklist = array('日', '一', '二', '三', '四', '五', '六');
+        return $prefix.$weeklist[$weekday].$suffix;
+    }
 }
