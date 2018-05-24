@@ -22,19 +22,10 @@ include "app/date.helper.php";
 ## Helpers Intro
 
 * dateHelper - 時間工具，可以快速使用時間參數
-```
-$dateHelper->tomorrow(); // 明天日期
-```
 
 * screenshotHelper - 網頁縮圖工具
-```
-screenshotHelper::getImg('http://www.pchome.com.tw/', 'img'); // 顯示當下pchome 網站的縮圖
-```
 
 * youtubeHelper - youtube協助工具
-```
-$youtubeHelper->getThumbnail({youtubeID}); // 回傳youtube縮圖
-```
 
 * uploadHelper - 上傳工具，協助上傳圖片到伺服器
 
