@@ -1,5 +1,5 @@
 <?php 
-include "app/youtube.helper.php";
+include "./youtube.helper.php";
 
 $youtubeHelper = new youtubeHelper;
 
