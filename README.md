@@ -31,6 +31,20 @@ include "app/date.helper.php";
 
 * uploadHelper - 上傳工具，協助上傳圖片到伺服器
 
+## Submodules (Git 子模組)
+
+如果需要將這個helper專案直接導入原先有的專案中
+
+可以考慮使用Git 子模組，請在需要導入的資料夾內輸入:
+
+```
+ git submodule add git@gitlab2.mypchome.com.tw:parker/helpers.git rack
+```
+
+Doc參考:
+
+https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B5%84-Submodules
+
 
 ## Authors
 
