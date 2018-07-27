@@ -2,22 +2,17 @@
 
 這裡存放一些可以協助開發簡化的PHP工具
 
-無須composer 直接include，即可使用
-
 ## Getting Started
 
 確認專案為 php 即可
-
-* php 5.2以上
 
 ## Installing
 
 直接include進入您的專案即可
 
 ```
-include "app/date.helper.php";
+include "./date.helper.php";
 ```
-可參照每個 helpers 資料夾中的 sample.php 去使用 
 
 ## Helpers Intro
 
@@ -52,6 +47,6 @@ https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B
 
 ## Version
 
-* 1.0.0
+* 1.1.0
 
 
