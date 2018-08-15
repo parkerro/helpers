@@ -16,7 +16,7 @@ class stringHelper{
             '#',
             '`',
             '\\',
-            '/'
+            '/',
             '0x02bc',
             'SELECT',
             'DELETE',
