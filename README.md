@@ -18,6 +18,8 @@ include "./date.helper.php";
 
 * jsonHelper - json 處理
 
+* stringHelper - 字串處理
+
 * dateHelper - 時間工具，可以快速使用時間參數
 
 * screenshotHelper - 網頁縮圖工具
