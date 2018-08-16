@@ -6,7 +6,7 @@
 class stringHelper{
 
     public static function SQLReplace($string) {
-        $string = strtoupper($string);
+        //$string = strtoupper($string);
 
         $injectionWords = array(
             '\'',
