@@ -10,7 +10,7 @@ class JsonHelper{
     }
 
     public static function parseBody() {
-        return json_decode(file_get_contents('php://input', 'r'));
+        return json_decode(file_get_contents('php://input'));
     }
 
     public static function success($data) {
