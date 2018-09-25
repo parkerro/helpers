@@ -6,7 +6,7 @@
 class dateHelper{
 
     public $formateDate = "Y-m-d";
-    public $formateTime = "h:i:s";
+    public $formateTime = "H:i:s";
 
     // 現在時間 2018/01/01 00:00:00
     public function now(){
