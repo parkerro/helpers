@@ -28,6 +28,8 @@ include "./date.helper.php";
 
 * uploadHelper - 上傳工具，協助上傳圖片到伺服器
 
+* FacebookDebugger - Facebook 的快取更新
+
 ## Submodules (Git 子模組)
 
 如果需要將這個helper專案直接導入原先有的專案中
