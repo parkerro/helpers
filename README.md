@@ -51,6 +51,6 @@ https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B
 
 ## Version
 
-* 1.1.0
+* 1.2.0
 
 
