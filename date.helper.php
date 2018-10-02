@@ -38,16 +38,16 @@ class dateHelper{
         return date($this->formateDate, strtotime("-30 days"));
     }
   
-    // 該月第一天日期; $value = 指定日期
-    public function startOfMonth($value = null){
-        $value = ($value)?$value:$this->now(); // 如果沒有參數，使用現在時間
-        return date($this->formateDate, strtotime(date('Y-m-01', strtotime($value))));
+    // 該月第一天日期; $date = 指定日期
+    public function startOfMonth($date = null){
+        $date = ($date)?$date:$this->now(); // 如果沒有參數，使用現在時間
+        return date($this->formateDate, strtotime(date('Y-m-01', strtotime($date))));
     } 
     
-    // 該月最後一天日期; $value = 指定日期    
-    public function endOfMonth($value = null){
-        $value = ($value)?$value:$this->now(); // 如果沒有參數，使用現在時間
-        return date($this->formateDate, strtotime(date('Y-m-t', strtotime($value))));
+    // 該月最後一天日期; $date = 指定日期    
+    public function endOfMonth($date = null){
+        $date = ($date)?$date:$this->now(); // 如果沒有參數，使用現在時間
+        return date($this->formateDate, strtotime(date('Y-m-t', strtotime($date))));
     }    
 
     // formatWeekdayToChinese({datetime}, {prefix}, {suffix})
