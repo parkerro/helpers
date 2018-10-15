@@ -8,12 +8,12 @@ class dateHelper{
     public $formateDate = "Y-m-d";
     public $formateTime = "H:i:s";
 
-    // 現在時間 2018/01/01 00:00:00
+    // 現在時間 2018-01-01 00:00:00
     public function now(){
         return date($this->formateDate." ".$this->formateTime);
     }
 
-    // 今天日期 2018/01/01
+    // 今天日期 2018-01-01
     public function today(){
         return date($this->formateDate);
     }
