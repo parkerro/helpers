@@ -22,6 +22,8 @@ include "./date.helper.php";
 
 * dateHelper - 時間工具，可以快速使用時間參數
 
+* PathHelper - 路徑工具
+
 * screenshotHelper - 網頁縮圖工具
 
 * youtubeHelper - youtube協助工具
@@ -51,6 +53,6 @@ https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B
 
 ## Version
 
-* 1.2.0
+* 1.3.0
 
 
