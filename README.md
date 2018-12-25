@@ -39,7 +39,7 @@ include "./date.helper.php";
 可以考慮使用Git 子模組，請在需要導入的資料夾內輸入:
 
 ```
- git submodule add git@gitlab.mypchome.com.tw:parker/helpers.git helpers
+ git submodule add git@gitlab2.mypchome.com.tw:parker/helpers.git helpers
 ```
 
 Doc參考:
