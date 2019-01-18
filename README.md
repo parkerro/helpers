@@ -32,7 +32,7 @@ include "./date.helper.php";
 
 * FacebookDebugger - Facebook 的快取更新
 
-* FacebookHelper - Facebook SDK for PHP 5.2
+* [FacebookHelper - Facebook SDK for PHP 5.2](http://gitlab2.mypchome.com.tw/parker/helpers/wikis/facebookhelper)
 
 ## Submodules (Git 子模組)
 
