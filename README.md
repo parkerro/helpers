@@ -32,6 +32,8 @@ include "./date.helper.php";
 
 * FacebookDebugger - Facebook 的快取更新
 
+* FacebookHelper - Facebook SDK for PHP 5.2
+
 ## Submodules (Git 子模組)
 
 如果需要將這個helper專案直接導入原先有的專案中
@@ -53,6 +55,6 @@ https://git-scm.com/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B
 
 ## Version
 
-* 1.3.0
+* 1.4.0
 
 
