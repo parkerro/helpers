@@ -50,7 +50,6 @@ class FacebookHelper{
     }
 
     public function get ($endpoint, $eTag = null) {
-        $eTag['access_token'] = $this->accessToken;
         return $this->sendRequest(
             'GET',
             $endpoint,
@@ -71,8 +70,17 @@ class FacebookHelper{
     }
 
     private function sendRequest ($method, $endpoint, $eTag){
-        $url = $this->configs->graphApiUrl."/".$this->configs->graphVersion.$endpoint;
-        return $this->curl($url, $eTag);
+        $eTag['access_token'] = $this->accessToken;
+
+        $result = $this->curl(
+            $this->configs->graphApiUrl."/".$this->configs->graphVersion.$endpoint, 
+            $eTag
+        );
+
+        if($result->error) {
+            throw new Exception($result->error->message);
+        }
+        return $result;
     }
 
     private function curl ($url, $data) {
