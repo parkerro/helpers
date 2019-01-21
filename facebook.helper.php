@@ -29,13 +29,12 @@ class FacebookHelper{
     private function configs () {
         $this->configs = new stdClass;
         $this->configs->graphApiUrl     = 'https://graph.facebook.com';
-        $this->configs->oauthUrl        = $this->configs->graphApiUrl."/oauth";
         $this->configs->graphVersion    = 'v3.2';
     }
 
     public function getAccessToken ($config) {
         $result = $this->curl(
-            $this->configs->oauthUrl."/access_token",
+            $this->configs->graphApiUrl."/oauth/access_token",
             array(
                 'client_id'     => $config['app_id'],
                 'client_secret' => $config['app_secret'],
