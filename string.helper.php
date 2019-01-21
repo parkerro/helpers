@@ -24,4 +24,8 @@ class stringHelper{
 
         return str_replace($injectionWords, '', $string);
     }
+
+    public static function makeClickableLinks($url) {
+        return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $url);
+    }
 }
