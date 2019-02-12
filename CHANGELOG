@@ -1,3 +1,7 @@
+## [1.4.1] - 2019-02-12
+### Added
+- sting工具新增 [emoji去除工具] - removeEmojis
+
 ## [1.3.0] - 2018-10-26
 ### Added
 - 新增PathHelper 工具
